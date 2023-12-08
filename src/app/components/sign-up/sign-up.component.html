@@ -1,0 +1,47 @@
+<h1>Sign Up</h1>
+<section>
+  <form [formGroup]="signUpform" (submit)="OnSubmit()">
+    <label for="first-name">First Name</label>
+    <input
+      id="first-name"
+      type="text"
+      placeholder="First Name"
+      formControlName="firstName"
+    />
+
+    <label for="last-name">Last Name</label>
+    <input
+      id="last-name"
+      type="text"
+      placeholder="Last Name"
+      formControlName="lastName"
+    />
+
+    <label for="email">Email</label>
+    <input
+      id="email"
+      type="email"
+      placeholder="Email"
+      formControlName="email"
+    />
+
+    <label for="password">Password</label>
+    <input
+      id="password"
+      type="password"
+      placeholder="Password"
+      formControlName="password"
+    />
+
+    <label for="phone">Phone</label>
+    <input id="phone" type="tel" placeholder="Phone" formControlName="phone" />
+    <label for="is-admin">Is Admin</label>
+    <input
+      id="is-admin"
+      type="checkbox"
+      placeholder="Is Admin"
+      formControlName="isAdmin"
+    />
+    <button type="submit" class="primary">Sign Up</button>
+  </form>
+</section>
